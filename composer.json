@@ -22,5 +22,6 @@
         "firebase/php-jwt": "^6.10",
         "maximebf/debugbar": "1.*",
         "daevsoft/framework": "^3.0"
-    }
+    },
+    "type": "project"
 }
