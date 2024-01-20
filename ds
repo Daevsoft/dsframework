@@ -1,0 +1,7 @@
+<?php
+require_once './vendor/daevsoft/framework/base.php';
+
+use Ds\Foundations\Commands\Terminal;
+
+$kernel = new Terminal($argv);
+$kernel->start();

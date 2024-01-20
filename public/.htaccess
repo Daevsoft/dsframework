@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/vendor
+# Rewrite any assets file
+RewriteRule ([^/]*)$.(css|js|png|jpe?g)$ index.php [L]
