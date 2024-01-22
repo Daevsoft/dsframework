@@ -6,6 +6,7 @@
 
 /app/views/*
 !/app/views/welcome.pie.php
+!/app/views/main_page.pie.php
 
 /storage/*
 
