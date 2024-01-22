@@ -1,7 +1,28 @@
-# dsframework
+# Dsframework
 PHP Ds Framework Next Generation
 
+# Getting Started
+To create dsframework project, first you need to install [Composer](https://getcomposer.org/download/). After install, open your directory where you want to create project, then type in terminal `composer create-project dsframework/dsframework` and composer will create a folder automatically include dsframework project in the directory.
+- Rename file `.env-copy` to be `.env`.
+- Open terminal in your dsframework directory and type `php ds serve`.
+- Open browser and go to [http://localhost:8000](http://localhost:8000)
+
+## Setup
+Dsframework using `env` file to save configurations. Each application was running, `env` file will converted into cache file.
+
+### Database
+open `.env` file, then update value 
+```
+DRIVER=mysql
+HOST=localhost
+USERNAME=root
+PASSWORD=
+DATABASE=mydatabase
+PORT=3306
+```
+
 ## Model
+
 ```php
 namespace App\Models;
 
@@ -173,12 +194,14 @@ class PersonController extends Controller
 
 ## Routing
 If you want to grouping routes based on controller, you can write like this :
-`app/route/web.php`
+<br>
+
+Open file `app/route/web.php`, and type like this
 ```php
 Route::group('/user', UserController::class);
 ```
-Then, in controller class :
-`app/controllers/UserController.php`
+Then, in controller class 
+`app/controllers/UserController.php` :
 ```php
 class UserController extends Controller 
 {

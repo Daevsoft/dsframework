@@ -1,5 +1,5 @@
 /app/controllers/*
-/app/controllers/IndexController.php
+!/app/controllers/IndexController.php
 
 /app/models/*
 /app/route/web.php

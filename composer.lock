@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85586405132b33a0ef3c02a6a191cff4",
+    "content-hash": "bfc21555167234df29f6f77468296978",
     "packages": [
         {
             "name": "daevsoft/framework",
             "version": "3.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Daevsoft/dsframework.git",
-                "reference": "8b84ec68435d1bae3062c8ab9b057bcb5d15a8e1"
+                "url": "https://github.com/Daevsoft/framework.git",
+                "reference": "3bcaf250f7e56d224558669214554e6fd48cfc96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Daevsoft/dsframework/zipball/8b84ec68435d1bae3062c8ab9b057bcb5d15a8e1",
-                "reference": "8b84ec68435d1bae3062c8ab9b057bcb5d15a8e1",
+                "url": "https://api.github.com/repos/Daevsoft/framework/zipball/3bcaf250f7e56d224558669214554e6fd48cfc96",
+                "reference": "3bcaf250f7e56d224558669214554e6fd48cfc96",
                 "shasum": ""
             },
             "require": {
@@ -36,14 +36,17 @@
             ],
             "description": "The Dsframework",
             "keywords": [
+                "dsframework",
                 "framework",
-                "laravel"
+                "mvc",
+                "php",
+                "templating"
             ],
             "support": {
-                "issues": "https://github.com/Daevsoft/dsframework/issues",
-                "source": "https://github.com/Daevsoft/dsframework/tree/3.0.0"
+                "issues": "https://github.com/Daevsoft/framework/issues",
+                "source": "https://github.com/Daevsoft/framework/tree/3.0.0"
             },
-            "time": "2024-01-19T10:18:30+00:00"
+            "time": "2024-01-22T04:28:47+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -468,5 +471,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.6.0"
 }
