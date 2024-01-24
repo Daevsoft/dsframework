@@ -2,7 +2,6 @@
 !/app/controllers/IndexController.php
 
 /app/models/*
-/app/route/web.php
 
 /app/views/*
 !/app/views/welcome.pie.php
