@@ -228,7 +228,7 @@ class SampleTest extends TestCase{
 ```
 
 ### Unit Test
-Or, using `--unit` options for generate unit test file. <br>
+Or, using `--unit` options to generate unit test file. <br>
 `php ds add:test --unit SampleTest` command.
 ```php
 describe('Count is one thousand', function(){
