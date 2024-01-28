@@ -217,9 +217,36 @@ DELETE | `http://localhost:8000/user/delete` <br>
 ## Testing
 Dsframework support for testing and unit test. <br />
 Write `php ds add:test SampleTest OtherTest` in terminal, and test file will generate automatically into `\tests` folder.
+
+```php
+class SampleTest extends TestCase{
+  public function test_sample(){
+    $expect = 'hello';
+    $this->assertTrue('hello' == $expect);
+  }
+}
+```
+
 ### Unit Test
 Or, using `--unit` options for generate unit test file. <br>
 `php ds add:test --unit SampleTest` command.
+```php
+describe('Count is one thousand', function(){
+  $count = 0;
+  for ($i=0; $i < 1000; $i++) { 
+    $count += $i;
+  }
+  return Assert::check($count == 1000);
+});
+// OR mock DatabaseProvider to support Model
+describe('One is one number', function(){
+  mock(DatabaseProvider::class);
+  $account = Account::find(7);
+
+  return Assert::equal($account->id, 7);
+});
+
+```
 ### Run Test
 To run your test file, type a command `php ds test` or `php ds test --unit` for unit test file. Then, all test files will be executed.
 <br/>
