@@ -1,28 +1,7 @@
-# Dsframework
+# dsframework
 PHP Ds Framework Next Generation
 
-# Getting Started
-To create dsframework project, first you need to install [Composer](https://getcomposer.org/download/). After install, open your directory where you want to create project, then type in terminal `composer create-project dsframework/dsframework` and composer will create a folder automatically include dsframework project in the directory.
-- Rename file `.env-copy` to be `.env`.
-- Open terminal in your dsframework directory and type `php ds serve`.
-- Open browser and go to [http://localhost:8000](http://localhost:8000)
-
-## Setup
-Dsframework using `env` file to save configurations. Each application was running, `env` file will converted into cache file.
-
-### Database
-open `.env` file, then update value 
-```
-DRIVER=mysql
-HOST=localhost
-USERNAME=root
-PASSWORD=
-DATABASE=mydatabase
-PORT=3306
-```
-
 ## Model
-
 ```php
 namespace App\Models;
 
@@ -194,14 +173,12 @@ class PersonController extends Controller
 
 ## Routing
 If you want to grouping routes based on controller, you can write like this :
-<br>
-
-Open file `app/route/web.php`, and type like this
+`app/route/web.php`
 ```php
 Route::group('/user', UserController::class);
 ```
-Then, in controller class 
-`app/controllers/UserController.php` :
+Then, in controller class :
+`app/controllers/UserController.php`
 ```php
 class UserController extends Controller 
 {
@@ -236,4 +213,15 @@ GET | `http://localhost:8000/user/detail/3` <br>
 POST | `http://localhost:8000/user/save` <br>
 DELETE | `http://localhost:8000/user/delete` <br>
 <br>
+
+## Testing
+Dsframework support for testing and unit test. <br />
+Write `php ds add:test SampleTest OtherTest` in terminal, and test file will generate automatically into `\tests` folder.
+### Unit Test
+Or, using `--unit` options for generate unit test file. <br>
+`php ds add:test --unit SampleTest` command.
+### Run Test
+To run your test file, type a command `php ds test` or `php ds test --unit` for unit test file. Then, all test files will be executed.
+<br/>
+
 based on [@daevsoft/dsframework](https://github.com/daevsoft/dsframework)

@@ -16,12 +16,22 @@
         ],
         "psr-4": {
             "Ds\\": "vendor/daevsoft/framework"
-        }
+        },
+        "classmap": [
+            "src/"
+        ]
     },
     "require": {
         "firebase/php-jwt": "^6.10",
         "maximebf/debugbar": "1.*",
-        "daevsoft/framework": "^3.0.0"
+        "daevsoft/framework": "^3.0"
     },
-    "type": "project"
+    "require-dev": {
+        "phpunit/phpunit": "10"
+    },
+    "scripts": {
+        "setup-configuration": [
+            "@php -r \"file_exists('.env') || copy('.env-example', '.env');\""
+        ]
+    }
 }
