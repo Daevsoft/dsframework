@@ -1,7 +1,38 @@
-# dsframework
-PHP Ds Framework Next Generation
+# PHP DsFramework
+PHP DsFramework Next Generation MVC framework. Inspired by Laravel and CodeIgniter framework with cutting edge complexity proccess.
+
+## Getting Started
+DsFramework support for PHP 8.1 or latest to work properly. <br>
+<b>Requirements :</b>
+* PHP 8.1 or [latest](https://php.net)
+* [Composer](https://getcomposer.org/download/)
+
+### How to run?
+First, install dependencies from composer with `composer install` command in terminal. <br>
+Second, run a project with `php ds serve` command. Done.
+
+### Connect Database
+To connecting into database, open the `.env` file and set your database configuration in the name prefix `DB_` property.<br>
+<b>Example: </b>
+```.env
+DB_DRIVER=mysql
+DB_HOST=localhost
+DB_USERNAME=root
+DB_PASSWORD=mypassword
+DB_NAME=somethingdb
+DB_PORT=3306
+SSL_CERT=
+SSL_VERIFY=false
+``` 
+Leave `DB_NAME` blank if a web application does not require a database. 
+
+### ENV File
+The `.env` file is a constant value for the application configuration. When the file has been modified, refresh the configuration cache with the `php ds config` command in the terminal.
 
 ## Model
+Open terminal and write a command : `php ds add:model modelName` <br>
+Or generate multiple model : `php ds add:model modelname1 modelname2 modelnameOther` <br>
+Example : `php ds add:model People` then model file `app/models/People.php` will be generated
 ```php
 namespace App\Models;
 
@@ -13,6 +44,9 @@ class People extends DsModel {
 ```
 
 ## Controller
+Open terminal and write a command : `php ds add:controller ControllerName` <br>
+Or generate multiple controller : `php ds add:controller controllername1 controllername2 controllernameOther` <br>
+Example of controller :
 ```php
 class IndexController extends Controller
 {
@@ -48,6 +82,7 @@ class IndexController extends Controller
 ```
 
 ## Routing
+The routing of web application is defined in the `app/route/web.php` file. 
 Example :
 ```php
 // with callback controller method
@@ -91,7 +126,11 @@ Route::group('admin', function () {
 ```
 
 ## View
-Example : ``welcome.pie.php``
+Open terminal and write a command : `php ds add:view viewname` <br>
+Or generate multiple view : `php ds add:view viewname1 viewname2 viewnameOther` <br>
+Or generate in subdirectory : `php ds add:view pages/viewname` and `views/pages/` directory will generate automatically. <br>
+<br>
+Example view file : `welcome.pie.php`
 ```html
 <html>
     <head>
