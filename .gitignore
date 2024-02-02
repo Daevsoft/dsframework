@@ -11,3 +11,5 @@ vendor
 
 /tests/unit/*
 !/tests/unit/sample.spec.php
+
+composer.lock

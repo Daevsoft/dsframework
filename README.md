@@ -7,6 +7,9 @@ DsFramework support for PHP 8.1 or latest to work properly. <br>
 * PHP 8.1 or [latest](https://php.net)
 * [Composer](https://getcomposer.org/download/)
 
+### Installation
+To create a new project with dsframework type a `composer create-project framework/framework mywebfoldername` command in the terminal.
+
 ### How to run?
 First, install dependencies from composer with `composer install` command in terminal. <br>
 Second, run a project with `php ds serve` command. Done.
