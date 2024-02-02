@@ -3,6 +3,7 @@
     "description": "The Dsframework template for dsframework project",
     "keywords": ["framework", "dsframework", "php", "mvc", "templating"],
     "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "daevsoft",
