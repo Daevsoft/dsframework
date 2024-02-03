@@ -17,10 +17,7 @@
         ],
         "psr-4": {
             "Ds\\": "vendor/daevsoft/framework"
-        },
-        "classmap": [
-            "src/"
-        ]
+        }
     },
     "require": {
         "firebase/php-jwt": "^6.10",

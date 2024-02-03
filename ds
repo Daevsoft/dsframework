@@ -1,5 +1,5 @@
 <?php
-require_once './vendor/daevsoft/framework/base.php';
+require_once './vendor/daevsoft/framework/src/base.php';
 
 use Ds\Foundations\Commands\Terminal;
 
