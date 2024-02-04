@@ -13,7 +13,8 @@
     "minimum-stability": "stable",
     "autoload": {
         "files": [
-            "vendor/daevsoft/framework/src/base.php"
+            "vendor/daevsoft/framework/src/base.php",
+            "app/functions/fun.php"
         ],
         "psr-4": {
             "Ds\\": "vendor/daevsoft/framework/src"

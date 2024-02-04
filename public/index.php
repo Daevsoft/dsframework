@@ -7,7 +7,5 @@ use DebugBar\StandardDebugBar;
 use Ds\Foundations\Config\Env;
 use Symfony\Component\VarDumper\VarDumper;
 
-require_once './app/functions/fun.php';
-
 $ds = new Ds();
 $ds->connect();
