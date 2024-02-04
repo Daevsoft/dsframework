@@ -28,7 +28,7 @@
         "phpunit/phpunit": "10"
     },
     "scripts": {
-        "setup-configuration": [
+        "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env-example', '.env');\""
         ]
     }
