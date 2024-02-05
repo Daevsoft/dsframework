@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/public/assets/css/style.css">
+  <title>DsFramework</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  @slot('style')
 </head>
 <body>
-  <h3>This is Main Page</h3>
-  @slot('contents')
+  <main>
+    @slot('contents')
+  </main>
   <footer>
-    This is footer
+    Search on GitHub <a href="https://github.com/daevsoft/dsframework">@daevsoft</a>
   </footer>
 </body>
 </html>
