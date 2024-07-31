@@ -1,5 +1,19 @@
 <?php
-require_once './vendor/daevsoft/framework/src/base.php';
+function isSlash()
+{
+    return strstr(__DIR__, '/') != false;
+}
+
+function replaceSlash($text)
+{
+    if (isSlash()) {
+        return str_ireplace('\\', '/', $text);
+    } else {
+        return $text;
+    }
+}
+define('SLASH', isSlash() ? '/' : '\\');
+require_once 'vendor'.SLASH.'autoload.php';
 
 use Ds\Foundations\Commands\Terminal;
 
