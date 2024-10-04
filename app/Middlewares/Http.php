@@ -4,14 +4,15 @@ namespace App\Middlewares;
 
 use Ds\Foundations\Common\Func;
 use Ds\Foundations\Network\Middleware;
-use Ds\Foundations\Network\Request;
 use Ds\Foundations\Network\Response;
+use Ds\Foundations\Security\Csrf;
 
-class Http implements Middleware
+class Http extends Middleware
 {
-    function handle($request, $next): Response
+    public function handle($request, $next): Response
     {
         Func::check('HTTP Middleware successfully!');
+        Csrf::generate();
         return $next();
     }
 }
